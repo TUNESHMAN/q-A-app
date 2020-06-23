@@ -13,7 +13,6 @@ require("dotenv").config();
 const server = express();
 
 // View engine setup
-// server.engine("handlebars", hbs());
 server.set("view engine", "hbs");
 
 // Body-parser middleware
@@ -54,7 +53,7 @@ server.post("/send", (req, res) => {
   // send mail with defined transport object
   let mailOptions = {
     from: "babatundea15@gmail.com", // sender address
-    to: "hr@avancevl.com, tuneshman92@gmail.com", // list of receivers
+    to: "hr@avancevl.com, tuneshman92@gmail.com, tuneshdev@gmail.com", // list of receivers
     subject: "Hello ✔, New Question Request", // Subject line
     text: "Hello world?", // plain text body
     html: output, // html body
