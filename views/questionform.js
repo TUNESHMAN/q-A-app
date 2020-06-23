@@ -1,3 +1,4 @@
+var firebase = require("firebase/app");
 // This is the link between our code and firebase. It does the same job as dbConfig in a SQL structure.
 var firebaseConfig = {
   apiKey: "AIzaSyB6vaKlANCatJJGVPjFb6V89grgbI7Uc2o",
