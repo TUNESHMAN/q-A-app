@@ -3,15 +3,18 @@ const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+const path = require("path");
 // Instantiate the server by invoking express
 const server = express();
-
 
 // We use the middleware
 server.use(express.json());
 server.use(cors());
 server.use(helmet());
 server.use(logger);
+
+// Bring in the static folder
+server.use("/q-A-app/public/", express.static(path.join(__dirname, "public")));
 
 // Flesh out a dummy API
 server.get("/", (req, res) => {
