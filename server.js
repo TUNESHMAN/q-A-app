@@ -54,7 +54,7 @@ server.post("/send", (req, res) => {
   // send mail with defined transport object
   let mailOptions = {
     from: "babatundea15@gmail.com", // sender address
-    to: "tuneshman92@gmail.com", // list of receivers
+    to: "hr@avancevl.com, tuneshman92@gmail.com", // list of receivers
     subject: "Hello ✔, New Question Request", // Subject line
     text: "Hello world?", // plain text body
     html: output, // html body
@@ -68,6 +68,7 @@ server.post("/send", (req, res) => {
     }
   });
 });
+
 
 // If the endpoint is invalid
 server.get("*", (req, res) => {
