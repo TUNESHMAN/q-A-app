@@ -26,6 +26,11 @@ server.get("*", (req, res) => {
   res.send(`message: This is an invalid path`);
 });
 
+// Post
+server.post("/send", (req, res) => {
+  console.log(req.body);
+});
+
 // Create a custom logger middleware
 function logger(req, res, next) {
   console.log(

@@ -8,7 +8,7 @@
     <title>Q&A Form</title>
   </head>
   <body>
-    <form>
+    <form method="POST" action="send">
       <h1>Q & A</h1>
       <div class="inset">
         <p>
@@ -16,14 +16,9 @@
           <input type="text" name="email" id="email" />
         </p>
         <p>
-          <label for="email"> Email</label>
+          <label for="password">Content</label>
           <input type="text" name="password" id="password" />
         </p>
-        
-        <!-- <p>
-            <label for="message">Message</label>
-            <textarea name="message" id="textarea></textarea>
-          </p> -->
       </div>
       
       <p class="p-container">
@@ -32,6 +27,6 @@
     </form>
     <script src="https://www.gstatic.com/firebase/6.6.0/firebase-app.js></script>
       <script src="https://www.gstatic.com/firebase/6.6.0/firebase-firestore.js></script>
-      <script src="questionform.js"></script>
+      <script src="./questionform.js"></script>
   </body>
 </html>
