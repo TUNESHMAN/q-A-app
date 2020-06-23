@@ -2,12 +2,9 @@
 const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
-const nodemailer = require("nodemailer")
+const nodemailer = require("nodemailer");
 // Instantiate the server by invoking express
 const server = express();
-// Bring in the formRouter
-const formRouter = require("./form/formRouter");
-// Import the user router
 
 
 // We use the middleware
@@ -15,7 +12,6 @@ server.use(express.json());
 server.use(cors());
 server.use(helmet());
 server.use(logger);
-server.use("/forms", formRouter);
 
 // Flesh out a dummy API
 server.get("/", (req, res) => {
