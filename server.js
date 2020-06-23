@@ -53,7 +53,7 @@ server.post("/send", (req, res) => {
   // send mail with defined transport object
   let mailOptions = {
     from: "babatundea15@gmail.com", // sender address
-    to: "tuneshman92@gmail.com, tuneshdev@gmail.com, babatundea15@gmail.com", // list of receivers
+    to: "tuneshman92@gmail.com, tuneshdev@gmail.com", // list of receivers
     subject: "Hello ✔, New Question Request", // Subject line
     text: "Hello world?", // plain text body
     html: output, // html body
